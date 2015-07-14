@@ -1,6 +1,6 @@
 [Service]
 Type=simple
-ExecStart /opt/godns/godns
+ExecStart=/opt/godns/godns
 User=godns
 Group=godns
 

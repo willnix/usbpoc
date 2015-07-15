@@ -1,10 +1,8 @@
 [Service]
 Type=simple
-ExecStart=/opt/godns/dns
-#User=godns
-#Group=godns
+ExecStart=/opt/imgwatch.sh
 ExecReload=/bin/kill -HUP $MAINPID
-WorkingDirectory=/opt/godns
+WorkingDirectory=/opt
 
 [Install]
 WantedBy=multi-user.target

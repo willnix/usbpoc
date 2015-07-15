@@ -1,10 +1,9 @@
 [Service]
 Type=simple
-ExecStart=/opt/godns/dns
-#User=godns
-#Group=godns
+ExecStart=/opt/webchan/webchan
 ExecReload=/bin/kill -HUP $MAINPID
-WorkingDirectory=/opt/godns
+WorkingDirectory=/opt/webchan
+Environment="PORT=80"
 
 [Install]
 WantedBy=multi-user.target

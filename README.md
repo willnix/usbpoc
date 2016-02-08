@@ -1,16 +1,16 @@
-# Repo for the paper "USB Devices phoning home"
+## Repo for the paper "USB Devices phoning home"
 
-## Setup
+### Setup
 
 General information about our armory setup
 
-### Misc
+#### Misc
 
 * add _sudo_ group
 * uncomment _sudo_ group line (visudo)
 * add users with groups, add users to _sudo_ group
 
-### Network
+#### Network
 
 * Default config in `/etc/systemd/network/gadget-deadbeef.network`
 * Changed default IP to `10.1.1.1` and gateway to `10.1.1.2`
@@ -24,7 +24,7 @@ General information about our armory setup
     echo 1 > /proc/sys/net/ipv4/ip_forward
     ```
 
-### Installed Packages
+#### Installed Packages
 
 * dnsmasq
 * inotify-tools
@@ -57,7 +57,7 @@ General information about our armory setup
         export PATH
         ```
 
-### USB Gadget
+#### USB Gadget
 
 Switched from g_cdc to g_multi because it includes g_mass_storage.
 Using the PID and VID of a SAMSUNG N7000 to make Windows 8 load the necessary drivers.
@@ -85,7 +85,7 @@ cp linux-armv7/src/linux-4.1/drivers/usb/gadget/legacy/g_multi.ko /lib/modules/$
 sudo depmod -a
 ```
 
-### Services
+#### Services
 
 * Copy [imgwatch.sh and filecp.sh](https://gitlab.sva.tuhh.de/svars/usb-armory/tree/master) to /opt
 * Copy [godns](https://gitlab.sva.tuhh.de/safs1103/usb-paper-godns/tree/master) to /opt/godns/

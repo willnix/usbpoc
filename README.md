@@ -1,4 +1,4 @@
-# Project Repo for the paper ''USB Devices phoning home''
+# Project Repo for the paper "USB Devices phoning home"
 
 ## Setup
 

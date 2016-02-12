@@ -1,7 +1,5 @@
 ## Repo for the paper "USB Devices phoning home"
 
-####*WARNING:* Some Files are still missing. This will be fixed ASAP (few days at most).
-
 ### Setup
 
 General information about our armory setup
@@ -89,14 +87,14 @@ sudo depmod -a
 
 #### Services
 
-* Copy [imgwatch.sh and filecp.sh](https://gitlab.sva.tuhh.de/svars/usb-armory/tree/master) to /opt
-* Copy [godns](https://gitlab.sva.tuhh.de/safs1103/usb-paper-godns/tree/master) to /opt/godns/
-* Copy [webchan](https://gitlab.sva.tuhh.de/safs1103/webchan/tree/master) to /opt/webchan/
-* Deploy the [systemd.service files](https://gitlab.sva.tuhh.de/svars/usb-armory/tree/master/systemd_services) in `/etc/systemd/system/multi-user.target.wants`
+* Copy [imgwatch.sh and filecp.sh](https://github.com/willnix/usbpoc/tree/master) to /opt
+* Copy [godns]((https://github.com/willnix/godns/tree/master) to /opt/godns/
+* Copy [webchan]((https://github.com/willnix/webchan/tree/master) to /opt/webchan/ and edit the file js/ga.js. Set the IP address of your remote server and the usb armory.
+* Deploy the [systemd.service files](https://github.com/willnix/usbpoc/tree/master/systemd_services) in `/etc/systemd/system/multi-user.target.wants`
 
 Enable them by running:
 ```console
 # systemctl daemon-reload
 ```
 
-* Copy the [dnsmasq config](https://gitlab.sva.tuhh.de/svars/usb-armory/blob/master/config_files/dnsmasq.conf) to /etc/dnsmasq.conf
+* Copy the [dnsmasq config]https://github.com/willnix/usbpoc/blob/master/config_files/dnsmasq.conf) to /etc/dnsmasq.conf
